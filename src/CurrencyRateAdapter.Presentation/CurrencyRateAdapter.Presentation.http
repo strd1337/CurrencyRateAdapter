@@ -1,0 +1,6 @@
+@CurrencyRateAdapter.Presentation_HostAddress = http://localhost:5030
+
+GET {{CurrencyRateAdapter.Presentation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
