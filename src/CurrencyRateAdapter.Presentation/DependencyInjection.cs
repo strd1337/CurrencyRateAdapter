@@ -1,3 +1,4 @@
+using CurrencyRateAdapter.Presentation.Common.Errors;
 using Mapster;
 using MapsterMapper;
 using System.Reflection;
@@ -13,7 +14,9 @@ namespace CurrencyRateAdapter.Presentation
 
             services
                 .AddMappings()
-                .AddSwaggerGen();
+                .AddSwaggerGen()
+                .AddGlobalExcetionHandling()
+                ;
 
             return services;
         }
@@ -27,6 +30,16 @@ namespace CurrencyRateAdapter.Presentation
             services.AddSingleton(config);
 
             services.AddScoped<IMapper, ServiceMapper>();
+
+            return services;
+        }
+
+        public static IServiceCollection AddGlobalExcetionHandling(
+           this IServiceCollection services)
+        {
+            services
+                .AddExceptionHandler<GlobalExceptionHandler>()
+                .AddProblemDetails();
 
             return services;
         }

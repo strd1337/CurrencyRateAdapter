@@ -26,6 +26,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 
+app.UseExceptionHandler();
+
 app.MapControllers();
 app.MapControllerRoute(
     name: "default",
