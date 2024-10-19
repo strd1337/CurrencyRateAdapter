@@ -30,6 +30,8 @@ app.UseRouting();
 
 app.UseExceptionHandler();
 
+app.UseRateLimiter();
+
 app.MapControllers();
 app.MapControllerRoute(
     name: "default",
