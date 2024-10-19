@@ -1,4 +1,4 @@
-using CurrencyRateAdapter.Domain.Providers;
+using CurrencyRateAdapter.Domain.Dtos;
 
 namespace CurrencyRateAdapter.Contracts.Providers.GetAllAvailable
 {

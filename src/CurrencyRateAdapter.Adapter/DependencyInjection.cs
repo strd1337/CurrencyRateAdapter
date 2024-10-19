@@ -27,7 +27,8 @@ namespace CurrencyRateAdapter.Adapter
 
         public static IServiceCollection AddCurrencyApi(
            this IServiceCollection services,
-           IConfiguration configuration)
+           IConfiguration configuration
+        )
         {
             CurrencyApiConfig currencyApiConfig = new();
             configuration.GetSection(CurrencyApiConfig.SectionName).Bind(currencyApiConfig);

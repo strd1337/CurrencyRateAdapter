@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Mvc;
 using CurrencyRateAdapter.Presentation.Common.Http;
 using Microsoft.AspNetCore.RateLimiting;
-using CurrencyRateAdapter.Domain.Common.Constants;
+using CurrencyRateAdapter.Domain.Constants;
 
 namespace CurrencyRateAdapter.Presentation.Controllers.Common
 {

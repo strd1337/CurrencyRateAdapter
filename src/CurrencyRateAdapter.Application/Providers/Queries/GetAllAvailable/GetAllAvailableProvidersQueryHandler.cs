@@ -6,7 +6,7 @@ using ErrorOr;
 namespace CurrencyRateAdapter.Application.Providers.Queries.GetAllAvailable
 {
     public sealed class GetAllAvailableProvidersQueryHandler(
-        ICurrencyProviderAdapter currencyProviderAdapter
+        ICurrencyProviderAdapter adapter
     ) : IQueryHandler<GetAllAvailableProvidersQuery, GetAllAvailableProvidersResult>
     {
         public async Task<ErrorOr<GetAllAvailableProvidersResult>> Handle(
@@ -14,7 +14,7 @@ namespace CurrencyRateAdapter.Application.Providers.Queries.GetAllAvailable
             CancellationToken cancellationToken
         )
         {
-            var result = await currencyProviderAdapter.GetAllAvailableProviderAsync();
+            var result = await adapter.GetAllAvailableProvidersAsync(cancellationToken);
 
             return result.IsError
                 ? result.Errors

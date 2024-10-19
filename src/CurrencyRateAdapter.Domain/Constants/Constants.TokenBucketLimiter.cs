@@ -1,4 +1,4 @@
-namespace CurrencyRateAdapter.Domain.Common.Constants
+namespace CurrencyRateAdapter.Domain.Constants
 {
     public static partial class Constants
     {
