@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CurrencyRateAdapter.Application\CurrencyRateAdapter.Application.csproj" />
+    <ProjectReference Include="..\CurrencyRateAdapter.Adapter\CurrencyRateAdapter.Adapter.csproj" />
   </ItemGroup>
 
 </Project>

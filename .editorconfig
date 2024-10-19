@@ -458,6 +458,12 @@ dotnet_style_allow_multiple_blank_lines_experimental = true:silent
 dotnet_style_allow_statement_immediately_after_block_experimental = true:silent
 dotnet_diagnostic.CA1050.severity = warning
 
+# OTHER DEALINGS IN THE SOFTWARE.
+##########################################
+
+# CA1848: Use the LoggerMessage delegates
+dotnet_diagnostic.CA1848.severity = silent
+
 ##########################################
 # License
 ##########################################

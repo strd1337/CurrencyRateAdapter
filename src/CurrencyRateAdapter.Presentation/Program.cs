@@ -1,11 +1,13 @@
 using CurrencyRateAdapter.Presentation;
 using CurrencyRateAdapter.Application;
 using CurrencyRateAdapter.Infrastructure;
+using CurrencyRateAdapter.Adapter;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services
     .AddApplication()
+    .AddAdapter(builder.Configuration)
     .AddInfrastructure(builder.Configuration)
     .AddPresentation();
 

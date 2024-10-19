@@ -8,9 +8,8 @@ namespace CurrencyRateAdapter.Application
             this IServiceCollection services)
         {
             services.AddMediatR(config =>
-            {
-                config.RegisterServicesFromAssembly(typeof(DependencyInjection).Assembly);
-            });
+                config.RegisterServicesFromAssembly(typeof(DependencyInjection).Assembly)
+            );
 
             return services;
         }

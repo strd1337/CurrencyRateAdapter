@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CurrencyRateAdapter.Adapter\CurrencyRateAdapter.Adapter.csproj" />
     <ProjectReference Include="..\CurrencyRateAdapter.Application\CurrencyRateAdapter.Application.csproj" />
     <ProjectReference Include="..\CurrencyRateAdapter.Contracts\CurrencyRateAdapter.Contracts.csproj" />
     <ProjectReference Include="..\CurrencyRateAdapter.Infrastructure\CurrencyRateAdapter.Infrastructure.csproj" />
